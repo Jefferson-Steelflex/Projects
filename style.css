@@ -1,0 +1,25 @@
+#Database_Button button{
+    background-color: rgb(75, 158, 252);
+    color: rgb(222, 222, 222);
+    border-color: rgb(75, 158, 252);
+    font-size: 20px;
+    font: roboto
+}   
+.dino-grid {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr 1fr; 
+  grid-template-rows: 100px 100px 100px  ;
+  gap: 10px;
+}
+
+.dino-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.dino-grid img {
+  width: 100px;
+  height: auto;
+  grid-column: 1; 
+}   
