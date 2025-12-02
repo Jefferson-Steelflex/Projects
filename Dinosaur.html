@@ -10,14 +10,11 @@
   </head>
   <!-- Body Start -->
   <body style="background-color: rgb(0, 26, 40)">
-    <section class="Heading">
-      <div id="Database_Button">
-        <button>Database</button>
-        <br />
-        <br />
-        <button>Jurassic World Database</button>
-        <button>Animal Genome</button>
-      </div>
+    <section>
+      <span class="Intro-Text">
+        <h3>Database</h3 style="border: 2px solid #1e8ed3;">
+        <h3>Jurassic World Database >> Dinosaurs >> Animal Genome</h3 style="border: 2px solid #1e8ed3;">
+      </span>
     </section>
     <!-- Dinosaur Grid Start -->
     <!-- Each Grid has the name, image of dino, image of diet -->
@@ -78,10 +75,21 @@
       </div>
 
       <div class="Dino-Card">
-        <h3>Ammonite</h3>
+        <h3 class="Dino-text">Ammonite</h3>
         <img class="Dino-Image" src="images/Ammonite.png" alt="Ammonite Pic" />
         <br />
-        <img class="Dino-Diet" src="images/.jpg" alt="Diet Logo" />
+        <img class="Dino-Diet" src="images/FishIcon.jpg" alt="Diet Logo" />
+      </div>
+
+      <div class="Dino-Card">
+        <h3>Ankylodocus</h3>
+        <img
+          class="Dino-Image"
+          src="images/Ankylodocus.png"
+          alt="Ankylodocus Pic"
+        />
+        <br />
+        <img class="Dino-Diet" src="images/PlantIcon.jpg" alt="Diet Logo" />
       </div>
 
       <div class="Dino-Card">
@@ -936,6 +944,17 @@
       </div>
 
       <div class="Dino-Card">
+        <h3>Nanotyrannus</h3>
+        <img
+          class="Dino-Image"
+          src="images/Nanotyrannus.png"
+          alt="Nanotyrannus Pic"
+        />
+        <br />
+        <img class="Dino-Diet" src="images/MeatIcon.jpg" alt="Diet Logo" />
+      </div>
+
+      <div class="Dino-Card">
         <h3>Nasutoceratops</h3>
         <img
           class="Dino-Image"
@@ -1095,7 +1114,6 @@
         <br />
         <img class="Dino-Diet" src="images/FishIcon.jpg" alt="Diet Logo" />
       </div>
-      '
 
       <div class="Dino-Card">
         <h3>Polacanthus</h3>
@@ -1249,6 +1267,16 @@
         />
         <br />
         <img class="Dino-Diet" src="images/MeatIcon.jpg" alt="Diet Logo" />
+      </div>
+
+      <div class="Dino-Card">
+        <h3>Spinoceratops</h3>
+        <img
+          class="Dino-Image"
+          src="images/Spinoceratops.png"
+          alt="Spinoceratops Pic"
+        />
+        <img class="Dino-Diet" src="images/FishPlantIcon.jpg" alt="Diet Logo" />
       </div>
 
       <div class="Dino-Card">
@@ -1562,13 +1590,127 @@
         <img class="Dino-Diet" src="images/MeatIcon.jpg" alt="Diet Logo" />
       </div>
     </section>
+    <br />
     <!-- End of Dino Cards Section -->
     <!-- Start of Dino Card Info Section -->
+     <br />
     <section class="Dino-Card-Info">
-      <div class="Info-Text">
-        <!--<h3>Dino Name</h3>-->
-        <!--<h3>Era</h3>-->
+      <div class="Card-Info">
+      <h1 class="Dino-Name">Acrocanthosaurus</h1>
+      <!-- here we create a parent container called "Dino-Info"
+           then we seperate the two item by left and right labels
+           we then use flexbox to align the items horizontally (left,right)
+           then use flexbox properties to align the items (justify-content)
+      -->
+      <h2 class="Dino-Stats">Stats</h2>
+        <p class="Dino-Info">
+          <span class="Dino-Info-left">Era</span>
+          <span class="Dino-Info-right">Early Cretaceous</span>
+        </p>
+        <p class="Dino-Info">
+          <span class="Dino-Info-left">Genus</span>
+          <span class="Dino-Info-right">Acrocanthosaurus</span>
+        </p>
+        <p class="Dino-Info">
+          <span class="Dino-Info-left">Height</span>
+          <span class="Dino-Info-right">4.8M</span>
+        </p>
+        <p class="Dino-Info">
+          <span class="Dino-Info-left">Weight</span>
+          <span class="Dino-Info-right">7T</span>
+        </p>
+        <p class="Dino-Info">
+          <span class="Dino-Info-left">Length</span>
+          <span class="Dino-Info-right">12.0M</span>
+        </p>
+        <p class="Dino-Info">
+          <span class="Dino-Info-left">Diet</span>
+          <span class="Dino-Info-right">Carnivore, Live Prey</span>
+        </p>
+
+
+      <div class="Description">
+        <h2 class="title">Description</h2>
+        <p class="text">
+         At around 12m in length and more than six tonnes in weight, Acrocanthosaurus is one of the largest theropods and dates back to the Early Cretaceous period. 
+         This carnivorous dinosaur gets its name which translates to ‘high-spined lizard’ from the elongated spines running the length of its neck and back, 
+         while its sharp teeth and powerful jaw make it a fearsome predator comparable to the much more well-known Tyrannosaurus rex.
+        </p>
       </div>
+
+      <div class="Discovery">
+        <h2 class="title">Discovery</h2>
+        <p class="text">
+          Acrocanthosaurus was officially discovered in 1950 by J. Willis Stovall and Wann Langston Junior in Atoka County, Oklahoma, when the two paleontologists 
+          dug up skeleton fragments including part of a skull. In the following decades there was little consensus on how to classify Acrocanthosaurus, and at 
+          various times it was believed to be a species of Allosaurus, Spinosaurus and Megalosaurus - but it is now considered part of the Carcharodontosaurus family.
+        </p>
+      </div>
+
+      <div class="Paleoecology">
+        <h2 class="title">Paleoecology</h2>
+        <p class="text"> 
+          Fossil findings have confirmed that Acrocanthosaurus lived approximately 110-125 million years ago in the Southern states of the
+          USA, most notably Texas, Oklahoma and Wyoming. Acrocanthosaurus was the apex predator of its time, with a diet consisting of other dinosaurs including 
+          Hadrosaurus, Tenontosaurus and Sauropods.
+        </p>
+      </div>
+
+      </div>
+
+        <img
+          class="Dino-Image-Large"
+          src="images/Acrocanthosaurus.png"
+          alt="Acrocanthosaurus Pic"
+        />
+      
+<!--
+      <div class="Card-Info">
+      <h1 class="dino-name">Alamosaurus</h1>
+      <h2>Stats</h2>
+        <ul>
+          <li span class="Era">Era</span> Late Cretaceous</li>
+          <li span class="Fam">Family</span> Saltasauridae</li>
+          <li span class="Genus">Genus</span> Alamosaurus</li>
+          <li span class="Height">Height</span> 13M</li>
+          <li span class="Weight">Weight</span> 80T</li>
+          <li span class="Length">Length</span> 29M</li>
+          <li span class="Diet">Diet</span> Tall Paleobotany</li>
+        </ul>
+
+      <div class="description">
+        <h2>Description</h2>
+        <p>
+         Alamosaurus is one of the largest dinosaurs known to have existed, with adults growing to a length of 20-25m 
+         and weighing up to 80 tonnes. Native to North America during the late Cretaceous period, Alamosaurus is an
+         herbivorous sauropod with armoured spikes on its back that protect it from predator attacks.
+        </p>
+
+      <div class="Discovery">
+        <h2>Discovery</h2>
+        <p>
+         The first Alamosaurus specimen was unearthed in 1921 by a team including the famous American paleontologist 
+         Charles W. Gilmore, with subsequent fossils found across the southern United States. This genus takes its 
+         name from the location of its discovery - the Ojo Alamo Formation in New Mexico.
+        </p>
+      </div>
+
+      <div class="Paleoecology">
+        <h2>Paleoecology</h2>
+        <p>
+          Alamosaurus first existed around 70m years ago in the southern United States and shared its habitat with 
+          many other genera of dinosaur including Ojoraptorsaurus, Torosaurus and the infamous Tyrannosaurus. 
+          The genus had large, blunt teeth for stripping trees and other vegetation, while stones found inside the 
+          ribcages of some specimens may have been swallowed to help break down fibrous plants.
+        </p>
+
+      <img
+          class="Dino-Image-Large"
+          src="images/Alamosaurus.png"
+          alt="Alamosaurus Pic"
+        />
+      </div>
+    -->
     </section>
   </body>
 </html>

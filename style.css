@@ -1,28 +1,103 @@
-#Database_Button button{
-    background-color: rgb(75, 158, 252);
-    color: rgb(222, 222, 222);
-    border-color: rgb(75, 158, 252);
-    font-size: 20px;
-    font: roboto
+.Intro-Text {
+  color: white;
+  font-size: 20px;
+  font: "SM Sans", sans-serif;
+  font-weight: 50;
+  text-transform: uppercase;         
 }   
+
 .Dino-Grid {
   display: grid;
-  grid-template-columns: 200px 200px 200px 200px 200px 200px; 
-  grid-template-rows: 200px 200px 200px 200px 200px 200px ;
+  grid-template-columns: 350px 350px 350px 350px 350px 350px 350px; 
+  grid-template-rows: 390px 390px 390px 390px 390px 390px 390px;
   gap: 5px;
+  justify-content: left;
+  margin-left: 5px;
 }
 
 .Dino-Card {
-  padding: 10px;
-  background-color: rgb(0, 69, 180);
-  text-align: center;
+  background-color: #224559;
+  color: white;
+  font-size: 15px;
+  padding-left: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
 }
+.Dino-Card:hover {
+  background-color: #4f92ae;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+} 
 .Dino-Image {
-  width: 150px;
-  height: auto;
-  margin-bottom: 10px;
+  width: 300px;
+  height: 300px;
+  padding-right: 1px;
+  object-fit: contain; 
 }
 .Dino-Diet{
-    width: 25px;
-    height: 25px;
+    position: relative;
+    width: 30px;         /* size of the image */
+    height: 30px;
+    margin-left: 300px;  /* margin-left or right,top,bottom etc moves the image within the container within those directions */
+    margin-top: -3px;   /* left,right,top,bottom etc moves the image within the container the same way */
+    margin-bottom: 5px;
 }
+
+.Dino-Card-Info {
+  display: flex;
+  color: white;
+  font-size: 18px;
+  font: "SM Sans, sans-serif";
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px;
+  gap: 40px;
+  min-height: 100vh;
+}
+
+.Dino-Name{
+   border:#224559 2px solid;
+   padding:5px;
+   background-color: #224559;
+}
+
+.Dino-Stats{
+   border:#224559 2px solid;
+   padding:5px;
+   text-transform: uppercase;
+   font-size: 22px;
+   margin-top: -23px;
+   margin-bottom: -20px;
+   background-color: #224559;
+   
+}
+.Dino-Info{
+    display: flex;
+    justify-content: space-between;
+    border: #224559, 2px solid;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 3px;
+    
+}
+
+.title{
+   border:#224559 2px solid;
+   padding: 5px;
+   font-size: 22px;
+   font-weight: bold;
+   text-transform: uppercase;
+   margin-top: -15px;
+   background-color: #224559;
+}
+.text{
+    border:#224559 2px solid;
+    padding:5px;
+    margin-top: -20px;
+}
+
+
