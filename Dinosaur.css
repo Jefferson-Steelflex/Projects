@@ -34,6 +34,7 @@
   padding-right: 1px;
   object-fit: contain; 
 }
+
 .Dino-Diet{
     position: relative;
     width: 30px;         /* size of the image */
@@ -43,61 +44,75 @@
     margin-bottom: 5px;
 }
 
+/* start of dino card info section */
 .Dino-Card-Info {
-  display: flex;
+  display: none;
+  justify-content: flex-start;
+  width: 1700px;
+  max-height: 2000px;
   color: white;
   font-size: 18px;
   font: "SM Sans, sans-serif";
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1400px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 40px;
-  gap: 40px;
-  min-height: 100vh;
+}
+
+.Dino-Image-Large {
+    display: flex;
+    justify-content: flex-end;
+    width: 1000px;
+    height: 1000px;
+    
 }
 
 .Dino-Name{
    border:#224559 2px solid;
-   padding:5px;
-   background-color: #224559;
+   padding: 5px;
+   
+   margin: 0px;
+   font-family: "SM Sans", sans-serif;
+   text-transform: uppercase;
+   font-size: 29px;
+   letter-spacing: 2px;
+   padding: 14px;
 }
 
 .Dino-Stats{
    border:#224559 2px solid;
-   padding:5px;
+   background-color: #224559;
+   padding: 5px;
    text-transform: uppercase;
    font-size: 22px;
-   margin-top: -23px;
-   margin-bottom: -20px;
-   background-color: #224559;
-   
+   margin: 0px;
+   font-family: "SM Sans", sans-serif;
 }
 .Dino-Info{
     display: flex;
     justify-content: space-between;
     border: #224559, 2px solid;
-    font-size: 22px;
+    background-color: #304e5e;
+    font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 3px;
-    
+    padding: 8px;
+    margin: 1px;
+    font-family: "SM Sans", sans-serif;
 }
-
+   
 .title{
    border:#224559 2px solid;
    padding: 5px;
    font-size: 22px;
    font-weight: bold;
    text-transform: uppercase;
-   margin-top: -15px;
    background-color: #224559;
+   margin: 0px;
+   font-family: "SM Sans", sans-serif;
 }
+
 .text{
     border:#224559 2px solid;
-    padding:5px;
-    margin-top: -20px;
+    padding: 6px;
+    margin: 0px;
+    font-family: "SM Sans", sans-serif;
 }
 
 
