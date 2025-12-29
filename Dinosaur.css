@@ -1,9 +1,14 @@
 .Intro-Text {
   color: white;
-  font-size: 20px;
-  font: "SM Sans", sans-serif;
+  font-size: 25px;
+  border:#224559 2px solid;
+  background-color: #304e5e;
+  padding:5px;
+  font-family: "SM Sans", sans-serif;
   font-weight: 50;
-  text-transform: uppercase;         
+  text-transform: uppercase;      
+  letter-spacing: 1px;   
+  word-spacing: 4px;;
 }   
 
 .Dino-Grid {
@@ -18,7 +23,9 @@
 .Dino-Card {
   background-color: #224559;
   color: white;
-  font-size: 15px;
+  font-size: 18px;
+  font-family: "SM Sans", sans-serif;
+  letter-spacing: 1px;
   padding-left: 10px;
   font-weight: 500;
   text-transform: uppercase;
@@ -46,13 +53,13 @@
 
 /* start of dino card info section */
 .Dino-Card-Info {
-  display: none;
+  display: none; /* flex */ 
   justify-content: flex-start;
   width: 1700px;
   max-height: 2000px;
   color: white;
   font-size: 18px;
-  font: "SM Sans, sans-serif";
+  font-family: "SM Sans", sans-serif;
 }
 
 .Dino-Image-Large {
@@ -60,13 +67,12 @@
     justify-content: flex-end;
     width: 1000px;
     height: 1000px;
-    
 }
 
 .Dino-Name{
    border:#224559 2px solid;
+   background-color: #304e5e;
    padding: 5px;
-   
    margin: 0px;
    font-family: "SM Sans", sans-serif;
    text-transform: uppercase;
@@ -110,6 +116,7 @@
 
 .text{
     border:#224559 2px solid;
+    background-color: #304e5e;
     padding: 6px;
     margin: 0px;
     font-family: "SM Sans", sans-serif;
