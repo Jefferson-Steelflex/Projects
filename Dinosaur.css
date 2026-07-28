@@ -1,4 +1,5 @@
-.Intro-Text {
+.Title-Bar {
+  grid-column: 1 / -1;
   color: white;
   font-size: 25px;
   border:#224559 2px solid;
@@ -9,14 +10,19 @@
   text-transform: uppercase;      
   letter-spacing: 1px;   
   word-spacing: 4px;;
-}   
+}
+/* ============================ */
+/* ============================ */
+/* start of Dino Grid ==========*/
+/* ============================ */
+/* ============================ */
 
 .Dino-Grid {
   display: grid;
   grid-template-columns: 350px 350px 350px 350px 350px 350px 350px; 
   grid-template-rows: 390px 390px 390px 390px 390px 390px 390px;
   gap: 5px;
-  justify-content: left;
+  justify-content: center;
   margin-left: 5px;
 }
 
@@ -29,6 +35,11 @@
   padding-left: 10px;
   font-weight: 500;
   text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  overflow: hidden;
+
 }
 .Dino-Card:hover {
   background-color: #4f92ae;
@@ -36,37 +47,61 @@
   cursor: pointer;
 } 
 .Dino-Image {
-  width: 300px;
-  height: 300px;
-  padding-right: 1px;
-  object-fit: contain; 
+  width: 275px;
+  height: 275px;
+  object-fit: contain;
 }
 
-.Dino-Diet{
-    position: relative;
-    width: 30px;         /* size of the image */
-    height: 30px;
-    margin-left: 300px;  /* margin-left or right,top,bottom etc moves the image within the container within those directions */
-    margin-top: -3px;   /* left,right,top,bottom etc moves the image within the container the same way */
-    margin-bottom: 5px;
+.Dino-Diet  {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 2px;
+  margin-left: 300px;
 }
-
+/* ============================ */
 /* start of dino card info section */
+/* ============================ */
 .Dino-Card-Info {
-  display: none; /* flex */ 
-  justify-content: flex-start;
-  width: 1700px;
-  max-height: 2000px;
-  color: white;
-  font-size: 18px;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #1b2b34;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
   font-family: "SM Sans", sans-serif;
 }
 
-.Dino-Image-Large {
+.Info-Panel-Layout {
     display: flex;
-    justify-content: flex-end;
-    width: 1000px;
-    height: 1000px;
+    width: 100%;
+    height: 100vh;
+}
+
+.Info-Left {
+  width: 30%;
+  padding: 20px;
+  object-fit: contain;
+}
+
+.InfoPanelIcon {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;  
+}
+
+.Info-Right {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.Dino-Image-Large {
+  height: 80%;
+  width: auto;
+  object-fit: contain;
+  overflow: hidden;
 }
 
 .Dino-Name{
@@ -90,20 +125,36 @@
    margin: 0px;
    font-family: "SM Sans", sans-serif;
 }
+
 .Dino-Info{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border: #224559, 2px solid;
     background-color: #304e5e;
-    font-size: 20px;
+    color: white;
+    font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
     padding: 8px;
     margin: 1px;
     font-family: "SM Sans", sans-serif;
 }
+
+.IconandLabel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+} 
+
+.InfoPanelIcon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
    
-.title{
+.title {
    border:#224559 2px solid;
    padding: 5px;
    font-size: 22px;
@@ -114,12 +165,43 @@
    font-family: "SM Sans", sans-serif;
 }
 
-.text{
+.description, .discovery, .paleoecology {
     border:#224559 2px solid;
     background-color: #304e5e;
     padding: 6px;
     margin: 0px;
     font-family: "SM Sans", sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
 }
 
+.paleoecology {
+    padding-bottom: 100px;
+}
+
+#Back-Button {
+    background-color: #224559;
+    color: white;
+    font-size: 18px;
+    font-family: "SM Sans", sans-serif;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 10px;
+    justify-content: bottom
+}
+
+.hidden {
+    display: none;
+}   
+
+.Info-Panel {
+    display: none;
+}
+
+.Info-Panel.hidden {
+    display: block;
+}
 
