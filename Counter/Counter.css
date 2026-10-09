@@ -1,0 +1,80 @@
+.body
+{
+    background-color: rgb(224, 224, 224);
+}
+#title {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: #5fabed
+}
+.display-parent
+{
+    display: flex;
+    justify-content: center;
+}
+.display 
+{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border: 2px solid;
+    border-radius: 10%;
+    border-color: rgb(223, 223, 223);
+    font-size: 100px;
+    color: white;
+    background-color: rgb(195, 195, 195);
+}
+.buttons
+{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    gap: 10px;
+    font-size: 40px;
+}
+
+.buttons button 
+{
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    color: white
+}
+
+#increase 
+{
+    background-color: rgb(19, 255, 19);
+    border-radius: 50px;
+    border-color: green
+}
+
+#decrease 
+{
+    background-color: rgb(251, 39, 39);
+    border-radius: 50px;
+    border-color: red;
+}
+
+#reset
+{
+    background-color: rgb(25, 144, 255);
+    border-radius: 50px;
+    border-color:blue 
+}
+
+#increase:hover 
+{
+    background-color: rgb(95, 253, 95);
+}
+
+#decrease:hover 
+{
+    background-color: rgb(252, 107, 107);
+}
+
+#reset:hover 
+{
+    background-color: rgb(79, 167, 250);
+}
+
