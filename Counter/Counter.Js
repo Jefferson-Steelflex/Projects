@@ -1,5 +1,5 @@
 const buttons = document.querySelector(".buttons"); /* pay attention to what type of selectors you must use
-                                                       classes = .class, id's = "id" without a dot or # */
+                                                       classes = .class, id's = without a dot or # */
 const display = document.querySelector(".display");
 
 const increase = document.getElementById("increase");

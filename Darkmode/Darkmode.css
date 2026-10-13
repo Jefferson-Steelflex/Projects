@@ -1,0 +1,30 @@
+.body
+{
+    background-color: white;
+}
+
+#title
+{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.button-parent
+{
+    display: flex;
+    justify-content: center;
+}
+
+#Darkmode
+{
+    background-color: rgb(227, 227, 227);
+    width: 75px;
+    height: 75px;
+    color: white;
+    border-radius: 25%;
+}
+
+#Darkmode:hover
+{   
+    background-color: black;
+}
