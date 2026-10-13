@@ -1,6 +1,6 @@
 .body
 {
-    background-color: white;
+    background-color: rgb(36, 163, 213);
 }
 
 #title
@@ -17,14 +17,35 @@
 
 #Darkmode
 {
-    background-color: rgb(227, 227, 227);
+    background-color: rgb(213, 214, 214);
     width: 75px;
     height: 75px;
     color: white;
     border-radius: 25%;
 }
 
+.emojis-parents
+{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#sun 
+{
+    font-size: 80px;
+}
+
+#cloud
+{
+    font-size: 80px;
+}
+
 #Darkmode:hover
 {   
     background-color: black;
 }
+
+/*
+<p id="moon">🌙</p>
+<p id="star">⭐</p>
+*\
